@@ -173,3 +173,57 @@ header section .left-bx .content .nutrition-bx .card h6 {
     align-items: center;
     font-size: .625rem;
 }
+
+header section .left-bx .content .nutrition-bx .card:nth-child(1) h6 {
+    background: rgba(56, 126, 206);
+}
+
+header section .left-bx .content p:nth-child(5) {
+    font-size: .625rem;
+    color: rgba(255, 255, 255, .5);
+    margin-top: .3125rem;
+}
+
+header section .left-bx .content button {
+    margin-top: 1.875rem;
+    padding: 3px  40px;
+    border-radius: 20px;  
+    border: .125rem solid #fff;  
+    background: transparent;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 11px;
+    transition: .3s linear;
+    cursor: var(--cursor);    
+}
+
+header section .left-bx .content button:hover {
+    background: #2d71c0;
+}
+
+header section .left-bx .item-bx {
+    display: flex;
+    align-items: center;
+    border: .0625rem solid #fff;
+    margin-top: 19px;
+}
+
+header section .left-bx .item-bx .card-pepsi {
+    width: 1.875rem;
+    /* border: .0625rem solid #fff; */
+    margin-top: 30px;
+    overflow: hidden;
+    cursor: var(--cursor);
+    z-index: 999;
+}
+
+header section .left-bx .item-bx .card-pepsi img {
+    width: 1.875rem;
+    transition: .3s linear;
+}
+
+header section .left-bx .item-bx .card-pepsi h6 {
+    width: 1.875rem;
+    text-align: center;
+    color: #2c6cbb;
+}
