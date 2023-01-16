@@ -309,7 +309,7 @@ header .ml-bx {
     position: absolute;
     width: 6.875rem;
     height: 9.375rem;
-    background: rgba(44, 138, 245, 1);
+    background: rgb(44, 138, 245);
     bottom: 0;
     right: 0;
     color: #fff;
