@@ -334,3 +334,134 @@ header .ml-bx h5 {
     bottom: 0;
     left: 0;
 }
+
+/* Media Query*/
+
+@media screen and (max-width: 1246px) {
+    header {
+        width: 90%;
+        transition: 1s linear;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    header {
+        width: 95%;
+    }
+    header section .left-bx {
+        padding: 40px 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+    header section {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    header section .left-bx .right-bx {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header section .left-bx {
+        padding: .625rem 0 0 1.25rem;
+    }
+    header section .right-bx {
+        width: 100%;
+        height: 40%;
+    }
+    header section .right-bx img {
+        width: 19.375rem;
+    }
+    header section .right-bx .right-btn-bx {
+        top: 45%
+        z-index: 99999
+    }
+    header section .left-bx .content button {
+        margin-top: 1.25rem;
+    }
+    header section .left-bx .item-bx {
+        margin-top: 0;
+    }
+    header section .left-bx #left-btn {
+        top: -37%;
+        z-index: 9999999;
+    }
+    header nav ul li {
+        padding: .1875rem .3125rem;
+    }
+    header nav ul li a {
+        font-size: .5625rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    header nav ul {
+        position: absolute;
+        top: 0;
+        right: 1.875rem;
+    }
+    header .ml-bx {
+        width: 5rem;
+        height: 4.5625rem;
+        padding: .625rem 0 0 .3125rem;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    header section .left-bx .content ,.nutrition-bx .card {
+        width: 4.125rem;
+    }
+    header section.left-bx .content .nutrition-bx .card:nth-child(4) p {
+        margin-top: .375rem;
+    }
+    header section .left-bx .item-bx .card-pepsi {
+        margin-right: 1.25rem;
+    }
+    header section .right-bx .right-btn-bx span {
+        display: none;
+    }
+    header section .right-bx img {
+        margin: 1.25rem 0 0 -7.5rem;
+    }
+    header section .left-bx .content p:nth-child(2) {
+        font-size: .5625rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header section .left-bx .content .nutrition-bx .card {
+        width: 3.4375rem;
+        height: 4.375rem;
+    }
+    header section .left-bx .content .nutrition-bx .card h3 {
+        font-size: .875rem;
+    }
+    header section .left-bx .content p:nth-child(2) {
+        font-size: .5rem;
+    }
+    header nav .buy-nav-btn {
+        font-size: .5rem;
+        padding: .3125rem .625rem;
+    }
+    header .ml-bx {
+        width: 3.875rem;
+        height: 25px;
+        padding: 3px 0 0 .3125rem;
+    }
+    header .ml-bx h3{
+        font-size: .875rem;
+        margin-top: 0;
+    }
+    header .ml-bx h5 {
+        display: none;
+    }
+    
+}
