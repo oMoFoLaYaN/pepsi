@@ -130,3 +130,46 @@ Array.from(document.getElementsByClassName('card-pepsi')).forEach((ele, i) => {
             document.getElementById('protein1').innerText = pepsi[i].proteinPer;
     })
 })
+
+let index = 1;
+
+document.getElementById('left-btn').addEventListener('click', () => {
+    index -= 1;
+    if (index < 0) {
+        index = pepsi.length;
+    }
+    document.getElementById('main-bottle').src = pepsi[index].mainPoster;
+    document.getElementById('main-title').innerText = pepsi[index].name;
+    document.getElementById('ml-title').innerText = pepsi[index].ml;
+    document.getElementById('cl').innerText = pepsi[index].amount;
+    document.getElementById('cl1').innerText = pepsi[index].amountPer;
+    document.getElementById('fat').innerText = pepsi[index].fat;
+    document.getElementById('fat1').innerText = pepsi[index].fatPer;
+    document.getElementById('sodium').innerText = pepsi[index].sodium;
+    document.getElementById('sodium1').innerText = pepsi[index].sodiumPer;
+    document.getElementById('carbohydrate').innerText = pepsi[index].carbohydrate;
+    document.getElementById('carbohydrate1').innerText = pepsi[index].carbohydratePer;
+    document.getElementById('protein').innerText = pepsi[index].protein;
+    document.getElementById('protein1').innerText = pepsi[index].proteinPer;
+})
+
+    document.getElementById('right-btn').addEventListener('click', () => {
+        index ++;
+        if (index > pepsi.length) {
+            index = 0;
+        }
+    document.getElementById('main-bottle').src = pepsi[index].mainPoster;
+    document.getElementById('main-title').innerText = pepsi[index].name;
+    document.getElementById('ml-title').innerText = pepsi[index].ml;
+    document.getElementById('cl').innerText = pepsi[index].amount;
+    document.getElementById('cl1').innerText = pepsi[index].amountPer;
+    document.getElementById('fat').innerText = pepsi[index].fat;
+    document.getElementById('fat1').innerText = pepsi[index].fatPer;
+    document.getElementById('sodium').innerText = pepsi[index].sodium;
+    document.getElementById('sodium1').innerText = pepsi[index].sodiumPer;
+    document.getElementById('carbohydrate').innerText = pepsi[index].carbohydrate;
+    document.getElementById('carbohydrate1').innerText = pepsi[index].carbohydratePer;
+    document.getElementById('protein').innerText = pepsi[index].protein;
+    document.getElementById('protein1').innerText = pepsi[index].proteinPer;
+})
+    
