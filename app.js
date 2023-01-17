@@ -10,10 +10,10 @@ const pepsi = [{
     carbohydratePer: "15.3%",
     protein: "0g",
     proteinPer: "0%",
-    ml: "250ml",
+    ml: "250 ml",
     poster1: "img/1 Pespi white.png",
     poster2: "img/1 Pespi blue.png",
-    mainPoster: "img/pespi diet.png",
+    mainPoster: "img/pepsi diet.png",
 },
 {
     name: "Pepsi Classic",
@@ -27,7 +27,7 @@ const pepsi = [{
     carbohydratePer: "14%",
     protein: "0g",
     proteinPer: "0%",
-    ml: "330ml",
+    ml: "330 ml",
     poster1: "img/2 can white.png",
     poster2: "img/2 can blue.png",
     mainPoster: "img/can.png",
@@ -44,7 +44,7 @@ const pepsi = [{
     carbohydratePer: "21.7%",
     protein: "0g",
     proteinPer: "0%",
-    ml: "500ml",
+    ml: "500 ml",
     poster1: "img/3 Pepsi white.png",
     poster2: "img/3 Pepsi blue.png",
     mainPoster: "img/pepsi .5ltr.png",
@@ -101,3 +101,32 @@ const pepsi = [{
     mainPoster: "img/pepsi 2ltr.png",
 }
 ]
+
+
+Array.from(document.getElementsByClassName('card-pepsi')).forEach((ele, i) => {
+    ele.addEventListener('mouseover', () => {
+        document.getElementsByClassName('pepsi-hover-img')[i].src = pepsi[i].poster1;
+    })
+    ele.addEventListener('mouseout', () => {
+        document.getElementsByClassName('pepsi-hover-img')[i].src = pepsi[i].poster2;
+    })
+})
+
+
+Array.from(document.getElementsByClassName('card-pepsi')).forEach((ele, i) => {
+    ele.addEventListener('click', () => {
+            document.getElementById('main-bottle').src = pepsi[i].mainPoster;
+            document.getElementById('main-title').innerText = pepsi[i].name;
+            document.getElementById('ml-title').innerText = pepsi[i].ml;
+            document.getElementById('cl').innerText = pepsi[i].amount;
+            document.getElementById('cl1').innerText = pepsi[i].amountPer;
+            document.getElementById('fat').innerText = pepsi[i].fat;
+            document.getElementById('fat1').innerText = pepsi[i].fatPer;
+            document.getElementById('sodium').innerText = pepsi[i].sodium;
+            document.getElementById('sodium1').innerText = pepsi[i].sodiumPer;
+            document.getElementById('carbohydrate').innerText = pepsi[i].carbohydrate;
+            document.getElementById('carbohydrate1').innerText = pepsi[i].carbohydratePer;
+            document.getElementById('protein').innerText = pepsi[i].protein;
+            document.getElementById('protein1').innerText = pepsi[i].proteinPer;
+    })
+})
