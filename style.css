@@ -18,7 +18,7 @@ html {
 body {
     width: 100%;
     height: 105vh;
-    background: #22259e;
+    background: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,8 +26,8 @@ body {
 
 header {
     position: relative;
-    width: 60%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
     background: linear-gradient(100deg, #153777, #2765b2);
     box-shadow: 0px 1.875rem 1.5625rem -0.0625rem rgba(0, 0, 0, .6);
     padding: 0px 1.875rem;
@@ -354,6 +354,9 @@ header .ml-bx h5 {
 }
 
 @media screen and (max-width: 780px) {
+    body {
+        height: 100%; 
+    }
     header {
         width: 100%;
         height: 100%;
@@ -380,7 +383,7 @@ header .ml-bx h5 {
     }
     header section .right-bx img {
         width: 19.375rem;
-        margin: -2.25rem 0 0 calc(20% - 2rem);
+        margin: 3.25rem 0 0 calc(20% - 2rem);
     }
     header section .right-bx .right-btn-bx {
         top: 45%;
@@ -399,7 +402,7 @@ header .ml-bx h5 {
         margin-top: 0;
     }
     header section .left-bx #left-btn {
-        top: -22%;
+        top: -52.5%;
         left: -10%;
         z-index: 9999999;
     }
@@ -417,19 +420,21 @@ header .ml-bx h5 {
         top: .3125rem;
         right: 1.875rem;
     }
-    header section .right-bx img {
-        margin: 0 0 0 3.25rem;
+    header nav {
+        position: absolute;
+        top:.3125rem;
+        max-width: 90%;
     }
-    header section .left-bx #left-btn {
-        top: -22%;
-        left: -10%;
+  header section .left-bx #left-btn {
+        top: -56.5%;
+        left: 0;
     }
     header section .left-bx {
-        width: 90%;
+        width: 100%;
     }
     header section .right-bx img {
         width: 19.375rem;
-        margin: -2.25rem 0 0 calc(10% - 3rem);
+        margin: 5.25rem 0 0 calc(10% - 3rem);
     }
     header .ml-bx {
         width: 5rem;
