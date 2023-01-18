@@ -405,7 +405,7 @@ header .ml-bx h5 {
 @media screen and (max-width: 570px) {
     header nav ul {
         position: absolute;
-        top: 0;
+        top: .3125rem;
         right: 1.875rem;
     }
     header .ml-bx {
@@ -419,7 +419,7 @@ header .ml-bx h5 {
     header section .left-bx .content ,.nutrition-bx .card {
         width: 4.125rem;
     }
-    header section.left-bx .content .nutrition-bx .card:nth-child(4) p {
+    header section .left-bx .content .nutrition-bx .card:nth-child(4) p {
         margin-top: .375rem;
     }
     header section .left-bx .item-bx .card-pepsi {
@@ -454,7 +454,7 @@ header .ml-bx h5 {
     header .ml-bx {
         width: 3.875rem;
         height: 25px;
-        padding: 3px 0 0 .3125rem;
+        padding: .1875rem 0 0 .3125rem;
     }
     header .ml-bx h3{
         font-size: .875rem;
