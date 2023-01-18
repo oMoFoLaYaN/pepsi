@@ -18,7 +18,7 @@ html {
 body {
     width: 100%;
     height: 105vh;
-    background: red;
+    background: #22259e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,12 +308,12 @@ header section .right-bx .level h6:nth-child(3) {
 header .ml-bx {
     position: absolute;
     width: 6.875rem;
-    height: 9.375rem;
+    height: 7.375rem;
     background: rgb(44, 138, 245);
     bottom: 0;
     right: 0;
     color: #fff;
-    padding: 1.25rem 0 0 1.25rem;
+    padding: 1.25rem 0 0 1rem;
 }
 
 header .ml-bx p {
@@ -324,16 +324,10 @@ header .ml-bx h6 {
     font-size: .625rem;
     margin-top: .625rem;
     font-weight: 500;
+    background: #196bd0;
+    width: 100%;
 }
 
-header .ml-bx h5 {
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    background: #196bd0;
-    bottom: 0;
-    left: 0;
-}
 
 /* Media Query*/
 
@@ -354,14 +348,9 @@ header .ml-bx h5 {
 }
 
 @media screen and (max-width: 780px) {
-    body {
-        height: 100%; 
-    }
-    header {
+    header section {
         width: 100%;
         height: 100%;
-    }
-    header section {
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
@@ -415,6 +404,9 @@ header .ml-bx h5 {
 }
 
 @media screen and (max-width: 570px) {
+    header section {
+        height: 100%;
+    }
     header nav ul {
         position: absolute;
         top: .3125rem;
@@ -438,13 +430,20 @@ header .ml-bx h5 {
     }
     header .ml-bx {
         width: 5rem;
-        height: 4.5625rem;
+        height: 6.5625rem;
         padding: .625rem 0 0 .3125rem;
     }
 }
 
 @media screen and (max-width: 452px) {
-    header section .left-bx .content ,.nutrition-bx .card {
+    header section {
+        height: 100%;
+    }
+    header section .left-bx #left-btn {
+        top: -10%;
+        left: 0%;
+    }
+   /* header section .left-bx .content ,.nutrition-bx .card {
         width: 4.125rem;
     }
     header section .left-bx .content .nutrition-bx .card:nth-child(4) p {
@@ -454,20 +453,26 @@ header .ml-bx h5 {
         margin-right: 1.25rem;
     }
     header section .left-bx #left-btn {
-        top: -27%;
-        left: -10%;
+        top: -32.5%;
+        left: 0%;
     }
+    header section .left-bx .content h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        justify-content: center;
+      }
     header section .right-bx .right-btn-bx span {
         display: none;
     }
     header section .right-bx img {
-        margin: 1.25rem 0 0 calc(10% - 3rem);
+        width: 18.375rem;
+        margin: 7.25rem 0 0 calc(10% - 3rem);
     }
     header section .left-bx .content p:nth-child(2) {
         font-size: .5625rem;
-    }
+    } */
 }
-
+/* 
 @media screen and (max-width: 390px) {
     header section .left-bx .content .nutrition-bx .card {
         width: 4.4375rem;
@@ -496,4 +501,4 @@ header .ml-bx h5 {
         display: none;
     }
     
-}
+} */
