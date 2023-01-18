@@ -17,7 +17,7 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background: #22259e;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ header section .left-bx #left-btn:hover {
 }
 
 header section .left-bx {
-    padding: 40px 0 0 70px;
+    padding: .1rem 0 0 4.375rem;
 }    
 
 header section .left-bx .content {
@@ -372,6 +372,7 @@ header .ml-bx h5 {
     }
     header section .left-bx {
         padding: .625rem 0 0 1.25rem;
+        width: 80%;
     }
     header section .right-bx {
         width: 100%;
@@ -379,10 +380,17 @@ header .ml-bx h5 {
     }
     header section .right-bx img {
         width: 19.375rem;
+        margin: -2.25rem 0 0 calc(20% - 2rem);
     }
     header section .right-bx .right-btn-bx {
         top: 45%;
         z-index: 99999;
+    }
+    header section .left-bx .content {
+        max-width: 100%;
+    }
+    header section .left-bx .content .nutrition-bx .card h3 {
+        font-size: 15px;
     }
     header section .left-bx .content button {
         margin-top: 1.25rem;
@@ -391,7 +399,8 @@ header .ml-bx h5 {
         margin-top: 0;
     }
     header section .left-bx #left-btn {
-        top: -37%;
+        top: -22%;
+        left: -10%;
         z-index: 9999999;
     }
     header nav ul li {
@@ -407,6 +416,20 @@ header .ml-bx h5 {
         position: absolute;
         top: .3125rem;
         right: 1.875rem;
+    }
+    header section .right-bx img {
+        margin: 0 0 0 3.25rem;
+    }
+    header section .left-bx #left-btn {
+        top: -22%;
+        left: -10%;
+    }
+    header section .left-bx {
+        width: 90%;
+    }
+    header section .right-bx img {
+        width: 19.375rem;
+        margin: -2.25rem 0 0 calc(10% - 3rem);
     }
     header .ml-bx {
         width: 5rem;
@@ -425,11 +448,15 @@ header .ml-bx h5 {
     header section .left-bx .item-bx .card-pepsi {
         margin-right: 1.25rem;
     }
+    header section .left-bx #left-btn {
+        top: -27%;
+        left: -10%;
+    }
     header section .right-bx .right-btn-bx span {
         display: none;
     }
     header section .right-bx img {
-        margin: 1.25rem 0 0 -7.5rem;
+        margin: 1.25rem 0 0 calc(10% - 3rem);
     }
     header section .left-bx .content p:nth-child(2) {
         font-size: .5625rem;
@@ -438,7 +465,7 @@ header .ml-bx h5 {
 
 @media screen and (max-width: 390px) {
     header section .left-bx .content .nutrition-bx .card {
-        width: 3.4375rem;
+        width: 4.4375rem;
         height: 4.375rem;
     }
     header section .left-bx .content .nutrition-bx .card h3 {
