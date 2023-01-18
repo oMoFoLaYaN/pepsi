@@ -381,8 +381,8 @@ header .ml-bx h5 {
         width: 19.375rem;
     }
     header section .right-bx .right-btn-bx {
-        top: 45%
-        z-index: 99999
+        top: 45%;
+        z-index: 99999;
     }
     header section .left-bx .content button {
         margin-top: 1.25rem;
